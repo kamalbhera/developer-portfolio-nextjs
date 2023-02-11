@@ -13,7 +13,7 @@ const Main = () => {
             Let&apos;s build something together
           </p>
           <h1 className="py-4 text-gray-700">
-            Hi,I&apos;m <span className="text-[#5651e5]">Shahith</span>
+            Hi,I&apos;m <span className="text-[#5651e5]">Kamal Bhera</span>
           </h1>
           <h1 className="py-2 text-gray-700">A Fullstack Web Developer</h1>
           <p className="py-4 text-gray-600 sm:max-w-[70%] m-auto">
@@ -22,7 +22,7 @@ const Main = () => {
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <a
-              href="https://www.linkedin.com/in/shahith-r-821920219/"
+              href="https://www.linkedin.com/in/"
               target="_blank"
               rel="noreferrer"
             >
@@ -31,7 +31,7 @@ const Main = () => {
               </div>
             </a>
             <a
-              href="https://github.com/Shahithraj?tab=repositories"
+              href="https://github.com/kamalbhera?tab=repositories"
               target="_blank"
               rel="noreferrer"
             >

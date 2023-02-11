@@ -1,14 +1,12 @@
+"use client"
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from 'react-icons/ai';
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-import { useRouter } from 'next/router';
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
   const [shadow, setShadow] = useState(false);
-  const {asPath} = useRouter();
-console.log(asPath);
   useEffect(() => {
     handleShadow();
   }, []);
@@ -27,7 +25,7 @@ console.log(asPath);
   };
   return (
     <div
-      style={{ backgroundColor: '#ecf0f3' }}
+      style={{ backgroundColor: '#0e0f11' }}
       className={
         shadow
           ? 'fixed top-0 w-full h-20 shadow-xl z-[100]'
@@ -40,22 +38,22 @@ console.log(asPath);
         </h1>
         <div>
           <ul className="hidden md:flex">
-            <li className={`ml-10 text-sm uppercase list_items ${asPath == "/"} `}>
+            <li className={`ml-10 text-sm uppercase list_items`}>
               <Link href="/" className="hover:text navigation_link">
                 Home
               </Link>
             </li>
             <Link href="/#about">
-              <li className={`ml-10 text-sm uppercase list_items ${asPath == "/#about"} `}>About</li>
+              <li className={`ml-10 text-sm uppercase list_items`}>About</li>
             </Link>
             <Link href="/#skills">
-              <li className={`ml-10 text-sm uppercase list_items ${asPath == "/#skills"} `}>Skills</li>
+              <li className={`ml-10 text-sm uppercase list_items`}>Skills</li>
             </Link>
             <Link href="/#projects">
-              <li className={`ml-10 text-sm uppercase list_items ${asPath == "/#projects"} `}>Projects</li>
+              <li className={`ml-10 text-sm uppercase list_items `}>Projects</li>
             </Link>
             <Link href="/#contact">
-              <li className={`ml-10 text-sm uppercase list_items ${asPath == "/#contact"} `}>Contact</li>
+              <li className={`ml-10 text-sm uppercase list_items contact`}>Contact</li>
             </Link>
           </ul>
           <div onClick={handleNav} className="md:hidden cursor-pointer mr-4">
@@ -98,19 +96,19 @@ console.log(asPath);
           <div className="py-4 flex flex-col">
             <ul className="uppercase flex-1">
               <Link href="/">
-                <li onClick={handleNav} className={`py-4 text-sm mobile_list ${asPath == "/"}`}>Home</li>
+                <li onClick={handleNav} className={`py-4 text-sm mobile_list`}>Home</li>
               </Link>
               <Link href="/#about">
-                <li onClick={handleNav} className={`py-4 text-sm mobile_list ${asPath == "/#about"}`}>About</li>
+                <li onClick={handleNav} className={`py-4 text-sm mobile_list`}>About</li>
               </Link>
               <Link href="/#skills">
-                <li onClick={handleNav} className={`py-4 text-sm mobile_list ${asPath == "/#skills"}`}>Skills</li>
+                <li onClick={handleNav} className={`py-4 text-sm mobile_list`}>Skills</li>
               </Link>
               <Link href="/#projects">
-                <li onClick={handleNav} className={`py-4 text-sm mobile_list ${asPath == "/#projects"}`}>Projects</li>
+                <li onClick={handleNav} className={`py-4 text-sm mobile_list`}>Projects</li>
               </Link>
               <Link href="/#contact">
-                <li onClick={handleNav} className={`py-4 text-sm mobile_list ${asPath == "/#contact"}`}>Contact</li>
+                <li onClick={handleNav} className={`py-4 text-sm mobile_list contact`}>Contact</li>
               </Link>
             </ul>
             <div className="pt-36">

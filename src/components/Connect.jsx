@@ -8,7 +8,7 @@ const Connect = () => {
   return (
     <>
      <a
-              href="https://www.linkedin.com/in/shahith-r-821920219/"
+              href="https://www.linkedin.com/feed"
               target="_blank"
               rel="noreferrer"
             >
@@ -17,7 +17,7 @@ const Connect = () => {
               </div>
             </a>
             <a
-              href="https://github.com/Shahithraj?tab=repositories"
+              href="https://github.com/kamalbhera?tab=repositories"
               target="_blank"
               rel="noreferrer"
             >

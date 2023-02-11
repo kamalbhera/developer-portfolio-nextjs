@@ -1,6 +1,7 @@
+"use client"
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
-import contact from '../public/assets/contact.jpg';
+import contact from '../../public/assets/contact.jpg';
 import Connect from './Connect';
 import { IoLogoWhatsapp } from 'react-icons/io';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
@@ -72,7 +73,7 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <h2 className="py-2">Shahith</h2>
+                <h2 className="py-2">Kamal Bhera</h2>
                 <p>Full stack Developer</p>
                 <p className="py-4">
                   I am available for freelance or full-time positions. Contact
@@ -83,7 +84,7 @@ const Contact = () => {
                 <p className="uppercase pt-8">Connect With Me</p>
                 <div className="flex items-center gap-2 py-2">
                   <AiOutlineMail className='mt-[2px]' />
-                  <h5>shahithr99@gmail.com</h5>
+                  <h5>kamalbhera97@gmail.com</h5>
                 </div>
                 <div className="flex items-center gap-2 py-2">
                   <IoLogoWhatsapp className='mt-[2px]' />
